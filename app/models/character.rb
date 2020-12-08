@@ -3,7 +3,7 @@ class Character < ActiveRecord::Base
   belongs_to :show
   
   def say_that_thing_you_say 
-    self.actor_id + " always says: " + self.catchphrase
+    @actor_id + " always says: " + self.catchphrase
   end 
   
 end
